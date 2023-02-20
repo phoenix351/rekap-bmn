@@ -41,9 +41,10 @@ $RECYCLE.BIN/
 #-------------------------
 # These should never be under version control,
 # as it poses a security risk.
-.env
+# .env
 .vagrant
 Vagrantfile
+
 
 #-------------------------
 # Temporary Files
@@ -64,9 +65,9 @@ writable/debugbar/*
 
 php_errors.log
 
-#-------------------------
+#-----------lock--------------
 # User Guide Temp Files
-#-------------------------
+#-------------------------lo
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
@@ -83,7 +84,8 @@ phpunit
 #-------------------------
 # Composer
 #-------------------------
-# vendor/
+vendor/*
+composer*
 
 #-------------------------
 # IDE / Development Files
