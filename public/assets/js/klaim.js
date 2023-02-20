@@ -1,6 +1,6 @@
 // CALCULATE PROGRESS BAR
-// const NAME_SERVER = "http://localhost";
-const NAME_SERVER = "http://monitoringbps.com/rekap-bmn/public";
+const NAME_SERVER = "http://localhost";
+// const NAME_SERVER = "http://monitoringbps.com/rekap-bmn/public";
 stepProgress = function (currstep) {
   var percent = parseFloat(100 / $(".step").length) * currstep;
   percent = percent.toFixed();

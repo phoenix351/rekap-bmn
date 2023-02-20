@@ -129,7 +129,7 @@ class Klaim extends BaseController
         $item_anggaran = $this->anggaran->select('id,item_id,tahun')->where('item_id',$id)->findAll();
         
         if (strlen($id)>0) {
-            $item_user = $this->item_builder->select('id, jenis, identitas,')->where('item.id',$id)->get();
+            $item_user = $this->item_builder->join('master_jenis_anggaran','master_jenis_anggaran.id = item.jenis_id','left')->select('item.id, jenis, identitas,')->where('item.id',$id)->get();
             
             $data= [
                 'item_user'=>$item_user->getResultArray()[0],
